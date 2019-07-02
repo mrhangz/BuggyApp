@@ -47,12 +47,12 @@ class MusicTracksViewController: UIViewController {
 
 extension MusicTracksViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return tracks.count + 1
+    return tracks.isEmpty ? 0 : 10
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: TrackTableViewCell.CellIdentifier, for: indexPath) as? TrackTableViewCell else {
-        return UITableViewCell()
+      return UITableViewCell()
     }
     let track: Track = tracks[indexPath.item]
     cell.configCell(track: track)
@@ -67,7 +67,5 @@ extension MusicTracksViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
-    let track: Track = tracks[indexPath.item]
-    performSegue(withIdentifier: "showDetail", sender: track)
   }
 }
