@@ -1,6 +1,0 @@
-framework module Pods_BuggyApp {
-  umbrella header "Pods-BuggyApp-umbrella.h"
-
-  export *
-  module * { export * }
-}

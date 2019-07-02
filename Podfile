@@ -8,6 +8,7 @@ target 'BuggyApp' do
   # Pods for BuggyApp
   pod 'Alamofire'
   pod 'Kingfisher'
+  pod 'SwiftyJSON'
 
   target 'BuggyAppTests' do
     inherit! :search_paths
