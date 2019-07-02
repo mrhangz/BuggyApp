@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Third-->
+        <!--Profile-->
         <scene sceneID="7Fw-5b-tL2">
             <objects>
                 <viewController id="6uy-RW-zmC" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="J4c-v2-bSr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Third" image="first" id="hjw-IW-tD5"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="icons8-contact_card_filled" id="hjw-IW-tD5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F34-4h-Wlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,6 +63,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="icons8-contact_card_filled" width="100" height="100"/>
     </resources>
 </document>

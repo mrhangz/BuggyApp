@@ -84,6 +84,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="UJD-RI-txg"/>
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="da3-bz-R5l"/>
                                 </connections>
                             </tableView>
@@ -282,11 +283,11 @@
             </objects>
             <point key="canvasLocation" x="2411.25" y="357.04225352112678"/>
         </scene>
-        <!--Second-->
+        <!--Songs-->
         <scene sceneID="EQy-rJ-7zI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kuu-mX-NW7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Songs" image="icons8-musical_notes_filled" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Ntk-50-j12">
                         <rect key="frame" x="0.0" y="20" width="320" height="91"/>
@@ -304,6 +305,6 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="icons8-musical_notes_filled" width="25" height="25"/>
     </resources>
 </document>

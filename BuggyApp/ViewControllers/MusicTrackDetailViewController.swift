@@ -34,6 +34,7 @@ class MusicTrackDetailViewController: UIViewController {
     guard let track = track else { return }
     title = track.trackName
     trackLabel.text = track.trackName
+    albumLabel.text = track.collectionName
     artworkImageView.kf.setImage(with: URL(string: track.artworkUrl))
     releaseDateLabel.text = formattedDate(from: track.releaseDate)
     genreLabel.text = track.primaryGenreName
