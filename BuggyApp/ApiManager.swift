@@ -38,8 +38,8 @@ class APIManager: APIManagerProtocol {
   }
   
   func getArtistInfo(artistName: String, completion: @escaping (Swift.Result<[Track], Error>) -> Void) {
-    let localBaseURL: String = "http://localhost:3000/songlist"
-    let baseURL: String = "https://itunes.apple.com/search?term=\(artistName)&entity=song"
+    let localBaseURL: String = "http://ec2-54-169-124-19.ap-southeast-1.compute.amazonaws.com:3000/songlist"
+//    let baseURL: String = "https://itunes.apple.com/search?term=\(artistName)&entity=song"
     Alamofire.request(localBaseURL)
       .validate()
       .responseJSON { response in
