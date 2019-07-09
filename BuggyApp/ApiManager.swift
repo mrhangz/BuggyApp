@@ -46,7 +46,7 @@ class APIManager: APIManagerProtocol {
         case .success:
           do {
             let json = try JSON(data: response.data!)
-            var tracks: [Track] = json["results"].arrayValue.compactMap({ Track(json: $0) })
+            var tracks: [Track] = json["results"].arrayValue.flatMap({ Track(json: $0) })
             completion(.success(tracks))
           } catch (let error) {
             completion(.failure(error))
